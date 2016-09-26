@@ -13,7 +13,7 @@
     
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
-
+        <script type= "text/javascript" src= "weatherly.js"></script>
 
 </head>
 
@@ -21,7 +21,8 @@
 <div class= "container">
     <div class="row">
         <div class= "col-md-4" style= " height: 500px; background-image: url(http://kurld.com/images/wallpapers/sunny-pic/sunny-pic-7.jpg); background-size: 100% 100%;">
-            <button class= "btn pull-right" style= "background-color: transparent;"><span class= "glyphicon glyphicon-plus" style= "color: white;"></span></button>
+            <input id= "zipBox" class = "pull-right" style = "background-color: transparent; border-color: transparent; color: white;" type= "text" placeholder= "Enter Zipcode">
+            <button id = "lookUpZipCode" class= "btn pull-right" style= "background-color: transparent;"><span class= "glyphicon glyphicon-plus" style= "color: white;"></span></button>
             <div style= "text-align: center; font-family: 'nova round'; font-size: 40pt; color: white; ">Sunny</div>
             <div style= "font-family: 'nova round'; color: white;">
                 <h1 style= "text-align: center;">Paintsville</h1><br/>
@@ -87,17 +88,9 @@
         <div class= "col-md-4" style= " height: 500px; background-image: url(http://www.pxleyes.com/images/contests/fog/fullsize/foggy-morning-4d51b2085c29b_hires.jpg); background-size: 100% 100%;">
             <button class= "btn pull-right" style= "background-color: transparent;"><span class= "glyphicon glyphicon-plus" style= "color: white;"></span></button>
             <div style= "text-align: center; font-family: 'nova round'; font-size: 40pt; color: white; ">Foggy</div>
-            <div style= "font-family: 'nova round'; color: white;">
-                <h1 style= "text-align: center;">Paintsville</h1><br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <h2 style= "text-align: center; font-size: 30pt;">70</h2>
+            <div id= "locationName" style= "font-family: 'nova round'; color: white;">
+                
+
             </div>
     </div>
     <div class= "col-md-4" style= " height: 500px; background-image: url(https://c1.staticflickr.com/7/6023/5975465375_9c089b6085_b.jpg); background-size: 100% 100%;">
