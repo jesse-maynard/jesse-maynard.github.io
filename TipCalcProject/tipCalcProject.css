@@ -1,0 +1,69 @@
+/*Main Styles*/
+h1{
+    text-align: center;
+}
+body{
+    background-image: url("http://fairelepont.com/images/background-restaurant.jpg");
+    text-align: center;
+}
+
+button:hover{
+    background-color: wheat;
+    color: #800020;
+}
+
+/*Custom Styles*/
+.button{
+    background-color: #800020;
+    color: wheat;
+    font-family: cursive;
+    text-align: center;
+}
+
+.dropDown{
+    background-color: transparent;
+    border-color: transparent;
+    color: #800020;
+    font-family: cursive;
+    width: 175px;
+
+}
+
+.tipsHead{
+    color: #800020; 
+    font-size: 25pt; 
+    font-family: cursive; 
+    text-align: center;
+}
+
+.inputLocation{
+    margin: 5px 0px 0px 0px;
+    font-family: cursive;
+    font-size: 15pt;
+    color: #800020;
+    text-align: center;
+}
+.selectorLocation{
+    margin: 5px 0px 0px 0px;
+    font-family: cursive;
+    font-size: 15pt;
+    color: #800020;
+    text-align: center;
+}
+
+.inputStyle{
+    background-color: transparent; 
+    border-color: #800020; 
+    color:#800020;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.makeMeCenter{
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    vertical-align: center;
+    
+}

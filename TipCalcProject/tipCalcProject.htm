@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="tipCalcProject.css">
+
+    <script type="text/javascript" src="tipCalcProject.js"></script>
+</head>
+
+<body>
+
+    <div class="container makeMeCenter">
+
+        <div class="row col-md-12 makeMeCenter center-block" align= "center">
+            <div class="col-md-12 center-block makeMeCenter"  style=" margin: 25px; height: 80%;text-align: center; border-radius: 60px; background-image: url(http://anima.lemerg.com/data/uploads/35/668369.jpg); background-size: 100% 100%;">
+                <span class="col-md-12 center-block tipsHead">Tip Calculator</span>
+                
+                <div class="row">
+                    <div class="col-md-12 inputLocation">
+                        <span>Bill Amount</span><br/>
+                        <input class="inputStyle" maxlength="6" id="billTotal" type="text" value="0.00" />
+                    </div><br/>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 inputLocation">
+                        <span>Number of People</span><br/>
+                        <input class="inputStyle" maxlength="6" id="numPeople" type="text" value="1" />
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-12 selectorLocation">
+
+                        <select class="dropDown" id="tipAmount" >
+            <option selected disabled>Tip %</option>
+            <option>30</option>  
+            <option>20</option>
+            <option>15</option>
+            <option>10</option>
+       </select>
+       
+       <div class="col-md-12" style="text-align: center;">
+                <button type="button" id="totalButton" class="btn button">Total</button>
+                <button type="button" id="clearButton" class="btn button">Clear</button>
+                <a href= "https://www.facebook.com/"><button type="button" id="shareButton" class="btn btn-primary" >Share</button></a>
+            <div class="row"><br/>
+                <div style= "text-align: center; border: solid #800020; border-radius: 10px;"></div>
+                <div id="total" style= "text-align: center;"></div><br/>
+                <div id="totalPerPerson" style= "text-align: center;"></div><br/>
+                <div id="tip" style= "text-align: center;"></div>
+                </div>
+            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</body>
+
+</html>
