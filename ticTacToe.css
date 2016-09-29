@@ -1,0 +1,27 @@
+/*Main Styles*/
+body{
+    background-color: #222;
+}
+
+h1{
+    font-family: 'kaushan script';
+    text-align: center;
+    color: #559c4f;
+}
+/*Custom Styles*/
+
+.gameBoard{
+    text-align: center;
+    vertical-align: center;
+}
+
+.gameTiles{
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    border-radius: 10px;
+    border-color: #559c4f;
+    background-color: #222;
+    color: #559c4f;
+    font-family: 'kaushan script';
+}
