@@ -1,0 +1,9 @@
+   <div class="row">
+                <button type = "button" class="gameTiles" id="a1" value=""></button><button class="gameTiles" id="b1"></button><button class="gameTiles" id="c1"></button>
+            </div>
+            <div class="row">
+                <button class="gameTiles" id="a2"></button><button class="gameTiles" id="b2"></button><button class="gameTiles" id="c2"></button>
+            </div>
+            <div class="row">
+                <button class="gameTiles" id="a3"></button><button class="gameTiles" id="b3"></button><button class="gameTiles" id="c3"></button>
+            </div>

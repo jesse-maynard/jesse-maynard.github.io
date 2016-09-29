@@ -20,7 +20,7 @@ h1{
     width: 100px;
     margin: 5px;
     border-radius: 10px;
-    border-color: #559c4f;
+    border: solid #559c4f;
     background-color: #222;
     color: #559c4f;
     font-family: 'kaushan script';
