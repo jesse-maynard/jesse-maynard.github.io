@@ -82,10 +82,14 @@ function lookUpWeatherForZipCode_Click() {
     lookupLatLong("", "", zcode);
 }
 
+function clearCards_Click(){
+    $("#cards").empty();
+}
 //Document Ready///////////////////////////////////////
 
 $(function () {
     $("#lookUpZipCode").on("click", lookUpWeatherForZipCode_Click)
+    $("#clearCards").on("click", clearCards_Click)
     $("#zipBox").focus();
 });
 
