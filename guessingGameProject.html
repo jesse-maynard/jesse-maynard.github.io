@@ -22,6 +22,15 @@
 </head>
 <h1 style="text-align: center;">Welcome to the Guessing Game of DOOM!</h1>
 <body>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-share-button" data-href="https://jesse-maynard.github.io/guessingGameProject.htm" data-layout="button" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjesse-maynard.github.io%2FguessingGameProject.htm&amp;src=sdkpreparse">Share</a></div>
 <div class="container">
     <div class="row" style="text-align: center;">
         <input class= "numInput" maxlength="1" id="num1" type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
