@@ -2,9 +2,10 @@
 
 
 body{
+
     background-image: url("http://www.grimrock.net/wp-content/uploads/2011/06/teaser_desktop_background.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    text-align: center;
 }
 
 h1{
@@ -34,6 +35,8 @@ button:hover{
     font-family: 'kaushan script';
     border-radius: 20px;
 }
+
+
 
 .numInput{
     height: 200px;
