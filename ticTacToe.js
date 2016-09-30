@@ -39,7 +39,7 @@ function boardClicked(tileNumber){
             cxt.stroke();
             cxt.closePath();
             content[tileNumber-1] = 'X';
-        }else{
+        }else{  
             cxt.beginPath();
             cxt.arc(25,25,20,0,Math.PI*2,true);
             cxt.stroke();
