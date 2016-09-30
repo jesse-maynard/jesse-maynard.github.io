@@ -1,0 +1,51 @@
+<html>
+
+<head>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="guessingGameProject.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="guessingGameProject.css">
+
+    <script src="jquery.modal.js" type="text/javascript" charset="utf-8"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+
+</head>
+<h1 style="text-align: center;">Welcome to the Guessing Game of DOOM!<a href="#infoModal" rel="modal:open" <button type="button" class="btn btn-info pull-right" style="margin: 10px;"><span class="glyphicon glyphicon-question-sign"></span></button></a></h1>
+<body>
+<div class="container">
+    <div class="row" style="text-align: center;">
+        <input class= "numInput" maxlength="1" id="num1" type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
+        <input class= "numInput" maxlength="1" id="num2" type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
+        <input class= "numInput" maxlength="1" id="num3" type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
+    </div>
+<div id="infoModal" class="infoModal" style="display:none;"><p><ol>
+    <a href="#" rel="modal:close"><button type="button" class="btn pull-right" style="background-color: transparent; border-color: transparent;"><span class="glyphicon glyphicon-remove-sign"></span></button></a>
+    <li>If the number is not correct and does not match one of the other values in the sequence the box will be <span style="color: red;">RED</span></li>
+    <li>If the number is not correct and but matches one of the other values in the sequence the box will be <span style="color: yellow;">YELLOW</span></li>
+    <li>If the number is correct the box will be <span style="color: green;">GREEN</span></li>
+    </ol></p></div>
+    <div class="row" style="text-align: center;">
+        <div style="margin: 250px 0px 0px 0px"><button type="button" class="btn guessButton">Guess?</button></div>
+        <div class="livesRemaining">10</div>
+        <div class="livesRemaining">Lives Remain...</div>
+    </div>
+
+</div>
+
+</body>
+
+
+
+</html>
