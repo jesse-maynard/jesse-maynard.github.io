@@ -47,6 +47,42 @@ button:hover{
     border-radius: 45px;
 
 }
+.numInput1{
+    height: 200px;
+    width: 100px;
+    text-align: center;
+    background-color: yellow;;
+    color: #222;
+    font-size: 25pt;
+    font-family: 'kaushan script';
+    border-color: #222;
+    border-radius: 45px;
+
+}
+.numInput2{
+    height: 200px;
+    width: 100px;
+    text-align: center;
+    background-color: seagreen;
+    color: yellow;
+    font-size: 25pt;
+    font-family: 'kaushan script';
+    border-color: yellow;
+    border-radius: 45px;
+
+}
+.numInput3{
+    height: 200px;
+    width: 100px;
+    text-align: center;
+    background-color: red;
+    color: yellow;
+    font-size: 25pt;
+    font-family: 'kaushan script';
+    border-color: yellow;
+    border-radius: 45px;
+
+}
 
 
 .guessButton{
@@ -65,4 +101,15 @@ button:hover{
     font-size: 50pt;
     color: yellow;
 
+}
+
+.lifeCounter{
+    font-family: 'kaushan script';
+    font-size: 50pt;
+    color: yellow;
+    background-color: #222;
+    border-color: yellow;
+    height: 200px;
+    width: 100px;
+    border-radius: 45px;
 }
