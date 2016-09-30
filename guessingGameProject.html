@@ -21,6 +21,8 @@
 
 </head>
 <h1 style="text-align: center;">Welcome to the Guessing Game of DOOM!</h1>
+        <div style="text-align: center;"><button id= "restartButton" type="button" class="btn guessButton">Restart?</button></div>
+
 <body>
     <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -31,7 +33,7 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <div class="fb-share-button" data-href="https://jesse-maynard.github.io/guessingGameProject.htm" data-layout="button" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjesse-maynard.github.io%2FguessingGameProject.htm&amp;src=sdkpreparse">Share</a></div>
-<div class="container">
+<div id="gameBoard" class="container">
     <div class="row" style="text-align: center;">
         <input class= "numInput" maxlength="1" id="num1" type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
         <input class= "numInput" maxlength="1" id="num2" type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>

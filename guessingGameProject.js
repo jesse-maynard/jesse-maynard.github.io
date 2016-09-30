@@ -47,17 +47,24 @@ document.getElementById('lifeCounter').innerHTML = lives--
 //Win or Lose
 
 if(document.getElementById('lifeCounter').innerHTML == 0){
-    alert("You have met your fate at the 'hands' of the Ithorian!");
+    alert("You have met your fate at the 'hands' of the Ithorian! OH!, by the way the numbers were...");
+    alert(answer1);
+    alert(answer2);
+    alert(answer3);
     location.reload();
 } else if(input1 == answer1 && input2 == answer2 && input3 == answer3){
-    alert("CURSE YOU ADVENTURER! I'LL GET YOU NEXT TIIIIMMMMMEEEE!!! OH!, by the way the numbers were...");
+    alert("CURSE YOU ADVENTURER! I'LL GET YOU NEXT TIIIIMMMMMEEEE!!!");
     
+    $("#gameBoard").hide();
+    $("#restartButton").show();
 }
 
 }
 
 
 function setUpGame(){
+        $("#restartButton").hide();
+        $("#gameBoard").show();
         answer1 = parseInt(Math.random() * 9);
         answer2 = parseInt(Math.random() * 9);
         answer3 = parseInt(Math.random() * 9);
@@ -83,7 +90,9 @@ function setUpGame(){
 
 
 }
-
+function refresh(){
+    location.reload();
+}
 /*function handleGuess(){
     var guess = $("#tbxGuess").val();
     if (+guess == answer) {
@@ -95,6 +104,7 @@ function setUpGame(){
 */
 $(function(){
     $("#guessButton").on("click", guessButton_Click)
+    $("#restartButton").on("click", refresh)
 
     setUpGame();
 
