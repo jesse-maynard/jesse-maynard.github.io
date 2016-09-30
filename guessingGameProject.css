@@ -93,17 +93,20 @@ button:hover{
     width: 200px;
     border-radius: 45px;
     background-color: #222;
-    border-color: #222;
+    border-color: yellow;
 }
 
 .livesRemaining{
+    text-align: center;
     font-family: 'kaushan script';
     font-size: 50pt;
     color: yellow;
 
+
 }
 
 .lifeCounter{
+    text-align: center;
     font-family: 'kaushan script';
     font-size: 50pt;
     color: yellow;

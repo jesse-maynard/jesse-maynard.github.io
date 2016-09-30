@@ -4,8 +4,7 @@ var input3;
 var answer1;
 var answer2;
 var answer3;
-var countingDown;
-var livesRemaining;
+var lives;
 
 function guessButton_Click(){
 input1 = $("#num1").val();
@@ -21,10 +20,11 @@ if(input1 == answer1){
 } else if(input1 == answer2 || input1 == answer3){
     $("#num1").removeClass("numInput");
     $("#num1").addClass("numInput1");
+
 } else if(input1 != answer1 || input1 != answer2 || input1 != answer3){
     $("#num1").removeClass("numInput");
     $("#num1").addClass("numInput3");
-    countingDown
+document.getElementById('lifeCounter').innerHTML = lives-- 
 }
 if(input2 == answer2){
     $("#num2").removeClass("numInput");
@@ -36,6 +36,7 @@ if(input2 == answer2){
     $("#num2").removeClass("numInput");
     $("#num2").addClass("numInput3");
 }
+document.getElementById('lifeCounter').innerHTML = lives-- 
 if(input3 == answer3){
     $("#num3").removeClass("numInput");
     $("#num3").addClass("numInput2");
@@ -46,15 +47,16 @@ if(input3 == answer3){
     $("#num1").removeClass("numInput");
     $("#num1").addClass("numInput3");
 }
+document.getElementById('lifeCounter').innerHTML = lives-- 
 //Win or Lose
 
-if(+livesRemaining == 0){
+if(document.getElementById('lifeCounter').innerHTML == 0){
     alert("You have met your fate at the 'hands' of the Ithorian!");
+    location.reload();
 } else if(input1 == answer1 && input2 == answer2 && input3 == answer3){
     alert("CURSE YOU ADVENTURER! I'LL GET YOU NEXT TIIIIMMMMMEEEE!!!");
 }
-countingDown = livesRemaining--
-livesRemaining = $("#lifeCounter").val();
+
 }
 
 
@@ -75,10 +77,14 @@ function setUpGame(){
             answer3--
         }
 
-    document.getElementById('lifeCounter').value = "10"
+    lives = 10
+    document.getElementById('lifeCounter').innerHTML = lives-- 
     console.log("Cheater! Don't you dare enter " + answer1);
     console.log("or " + answer2);
     console.log("OR... " + answer3);
+
+
+
 }
 
 /*function handleGuess(){
