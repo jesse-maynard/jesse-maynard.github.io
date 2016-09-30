@@ -11,7 +11,7 @@ var squaresFilled = 0;
 var w;
 var y;
  
-//Instanciate Arrays
+//Arrays
 window.onload=function(){
     painted = new Array();
     content = new Array();
