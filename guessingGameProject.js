@@ -21,40 +21,37 @@ if(input1 == answer1){
     $("#num1").removeClass("numInput");
     $("#num1").addClass("numInput1");
 
-} else if(input1 != answer1 || input1 != answer2 || input1 != answer3){
-    $("#num1").removeClass("numInput");
-    $("#num1").addClass("numInput3");
-document.getElementById('lifeCounter').innerHTML = lives-- 
-}
+} 
 if(input2 == answer2){
     $("#num2").removeClass("numInput");
     $("#num2").addClass("numInput2");
 } else if(input2 == answer1 || input2 == answer3){
     $("#num2").removeClass("numInput");
     $("#num2").addClass("numInput1");
-} else if(input2 != answer1 || input2 != answer2 || input3 != answer3){
-    $("#num2").removeClass("numInput");
-    $("#num2").addClass("numInput3");
-}
-document.getElementById('lifeCounter').innerHTML = lives-- 
+} 
 if(input3 == answer3){
     $("#num3").removeClass("numInput");
     $("#num3").addClass("numInput2");
 } else if(input3 == answer2 || input3 == answer1){
     $("#num3").removeClass("numInput");
     $("#num3").addClass("numInput1");
-} else if(input3 != answer1 || input3 != answer2 || input3 != answer3){
+} else if(input1 != answer1 || input1 != answer2 || input1 != answer3 && input2 != answer1 || input2 != answer2 || input2 != answer3 && input3 != answer1 || input3 != answer2 || input3 != answer3){
     $("#num1").removeClass("numInput");
     $("#num1").addClass("numInput3");
-}
+    $("#num2").removeClass("numInput");
+    $("#num2").addClass("numInput3");
+    $("#num3").removeClass("numInput");
+    $("#num3").addClass("numInput3");
 document.getElementById('lifeCounter').innerHTML = lives-- 
+}
 //Win or Lose
 
 if(document.getElementById('lifeCounter').innerHTML == 0){
     alert("You have met your fate at the 'hands' of the Ithorian!");
     location.reload();
 } else if(input1 == answer1 && input2 == answer2 && input3 == answer3){
-    alert("CURSE YOU ADVENTURER! I'LL GET YOU NEXT TIIIIMMMMMEEEE!!!");
+    alert("CURSE YOU ADVENTURER! I'LL GET YOU NEXT TIIIIMMMMMEEEE!!! OH!, by the way the numbers were...");
+    
 }
 
 }
